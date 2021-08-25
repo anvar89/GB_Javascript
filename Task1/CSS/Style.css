@@ -1,0 +1,30 @@
+html {
+  font-family: Verdana;
+}
+
+table {
+  border: 0px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+}
+
+td {
+  height: 40px;
+  width: 40px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.darkCell {
+  background-color: black;
+  color: azure;
+}
+
+.lightCell {
+  background-color: azure;
+  color: black;
+}
