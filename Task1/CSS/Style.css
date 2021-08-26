@@ -4,38 +4,33 @@ html {
 
 table {
   border-collapse: collapse;
-  border: 1px solid rgb(200,200,200);
+  border: 1px solid rgb(200, 200, 200);
   letter-spacing: 1px;
 }
 
-td, th {
-  border: 1px solid rgb(190,190,190);
+td,
+th {
+  border: 1px solid rgb(190, 190, 190);
+  height: 45px;
+  width: 45px;
 }
 
 .darkCell {
-  background-color:rgb(78, 78, 78);
-  color: white;
-  height: 47px;
-  width: 47px;
+  background-color: rgb(78, 78, 78);
 }
 
 .lightCell {
   background-color: white;
-  color:black;
-  height: 47px;
-  width: 47px;
 }
 
 .horizontalLabel {
   text-align: center;
   height: 20px;
-  width: 47px;
   border: 0px;
 }
 
 .verticalLabel {
   text-align: center;
-  height: 47px;
   width: 20px;
   border: 0px;
 }
@@ -44,4 +39,41 @@ td, th {
   height: 20px;
   width: 20px;
   border: 0px;
+}
+
+.ltPawn {
+  background-image: url(/Images/pawn-light.svg);
+}
+.dkPawn {
+  background-image: url(/Images/pawn-dark.svg);
+}
+.ltRook {
+  background-image: url(/Images/rook-light.svg);
+}
+.dkRook {
+  background-image: url(/Images/rook-dark.svg);
+}
+.ltKnight {
+  background-image: url(/Images/knight-light.svg);
+}
+.dkKnight {
+  background-image: url(/Images/knight-dark.svg);
+}
+.ltBishop {
+  background-image: url(/Images/bishop-light.svg);
+}
+.dkBishop {
+  background-image: url(/Images/bishop-dark.svg);
+}
+.ltQueen {
+  background-image: url(/Images/queen-light.svg);
+}
+.dkQueen {
+  background-image: url(/Images/queen-dark.svg);
+}
+.ltKing {
+  background-image: url(/Images/king-light.svg);
+}
+.dkKing {
+  background-image: url(/Images/king-dark.svg);
 }

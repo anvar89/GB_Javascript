@@ -13,27 +13,27 @@ function isDarkCell(row, column) {
 
 function getPieceByCell(row, column) {
     // пешки
-    if (row === 2) return "<img src='/Images/pawn-light.svg'/>";
-    if (row === 7) return "<img src='/Images/pawn-dark.svg'/>";
+    if (row === 2) return "ltPawn";
+    if (row === 7) return "dkPawn";
 
     // остальные светлые фигуры
     if (row === 1) {
-        if (column === 1 || column === 8) return "<img src='/Images/rook-light.svg'/>";
-        if (column === 2 || column === 7) return "<img src='/Images/knight-light.svg'/>";
-        if (column === 3 || column === 6) return "<img src='/Images/bishop-light.svg'/>";
-        if (column === 4) return "<img src='/Images/queen-light.svg'/>";
-        if (column === 5) return "<img src='/Images/king-light.svg'/>";
+        if (column === 1 || column === 8) return "ltRook";
+        if (column === 2 || column === 7) return "ltKnight";
+        if (column === 3 || column === 6) return "ltBishop";
+        if (column === 4) return "ltQueen";
+        if (column === 5) return "ltKing";
     }
 
     // остальные тёмные фигуры
     if (row === 8) {
-        if (column === 1 || column === 8) return "<img src='/Images/rook-dark.svg'/>";
-        if (column === 2 || column === 7) return "<img src='/Images/knight-dark.svg'/>";
-        if (column === 3 || column === 6) return "<img src='/Images/bishop-dark.svg'/>";
-        if (column === 4) return "<img src='/Images/queen-dark.svg'/>";
-        if (column === 5) return "<img src='/Images/king-dark.svg'/>";
+        if (column === 1 || column === 8) return "dkRook";
+        if (column === 2 || column === 7) return "dkKnight";
+        if (column === 3 || column === 6) return "dkBishop";
+        if (column === 4) return "dkQueen";
+        if (column === 5) return "dkKing";
     }
-    return "";
+    return "empty";
 }
 
 const body = document.body,
@@ -48,17 +48,17 @@ for (let i = 0; i < rows; i++) {
         // Буквенные надписи
         if (i == 0 || i == rows - 1) {
             if (j == 0 || j == columns - 1) {
-                td.className = "emptyCell"; // пустые ячейки по углам
+                td.classList.add("emptyCell"); // пустые ячейки по углам
             }
             else {
-                td.className = "horizontalLabel";
+                td.classList.add("horizontalLabel");
                 td.appendChild(document.createTextNode(letter[j - 1]));
             }
         }
 
         // числовые надписи
         if ((j == 0 || j == columns - 1) && (i > 0 && i < (rows - 1))) {
-            td.className = "verticalLabel";
+            td.classList.add("verticalLabel");
             td.appendChild(document.createTextNode(rows - i - 1));
         }
 
@@ -67,7 +67,7 @@ for (let i = 0; i < rows; i++) {
 
             td.className = isDarkCell(i, j) ? "darkCell" : "lightCell";
 
-            td.innerHTML = getPieceByCell(i, j);
+            td.classList.add(getPieceByCell(i, j));
 
         }
     }
