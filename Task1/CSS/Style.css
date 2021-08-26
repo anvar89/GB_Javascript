@@ -42,38 +42,38 @@ th {
 }
 
 .ltPawn {
-  background-image: url(/Images/pawn-light.svg);
+  background-image: url("../Images/pawn-light.svg");
 }
 .dkPawn {
-  background-image: url(/Images/pawn-dark.svg);
+  background-image: url("../Images/pawn-dark.svg");
 }
 .ltRook {
-  background-image: url(/Images/rook-light.svg);
+  background-image: url("../Images/rook-light.svg");
 }
 .dkRook {
-  background-image: url(/Images/rook-dark.svg);
+  background-image: url("../Images/rook-dark.svg");
 }
 .ltKnight {
-  background-image: url(/Images/knight-light.svg);
+  background-image: url("../Images/knight-light.svg");
 }
 .dkKnight {
-  background-image: url(/Images/knight-dark.svg);
+  background-image: url("../Images/knight-dark.svg");
 }
 .ltBishop {
-  background-image: url(/Images/bishop-light.svg);
+  background-image: url("../Images/bishop-light.svg");
 }
 .dkBishop {
-  background-image: url(/Images/bishop-dark.svg);
+  background-image: url("../Images/bishop-dark.svg");
 }
 .ltQueen {
-  background-image: url(/Images/queen-light.svg);
+  background-image: url("../Images/queen-light.svg");
 }
 .dkQueen {
-  background-image: url(/Images/queen-dark.svg);
+  background-image: url("../Images/queen-dark.svg");
 }
 .ltKing {
-  background-image: url(/Images/king-light.svg);
+  background-image: url("../Images/king-light.svg");
 }
 .dkKing {
-  background-image: url(/Images/king-dark.svg);
+  background-image: url("../Images/king-dark.svg");
 }
