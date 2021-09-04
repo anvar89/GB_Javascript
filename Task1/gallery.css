@@ -2,6 +2,22 @@ body {
   background-color: black;
 }
 
+.top-block {
+  text-align: center;
+}
+
+.top {
+  display: inline;
+}
+
+.navigation {
+  width: 100 px;
+}
+
+.navigation:hover {
+  filter: invert(1);
+}
+
 .central-slide {
   height: calc(100vh - 150px);
   text-align: center;
